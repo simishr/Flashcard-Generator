@@ -4,7 +4,7 @@ var inquirer = require("inquirer");
 "use strict";
 // BasicCard constructor..
 function BasicCard (front, back) {
-	if (!this instanceof BasicCard) {
+	if (!(this instanceof BasicCard)) {
 		return new BasicCard (front, back);
 	}
 	this.front = front;
@@ -18,7 +18,7 @@ BasicCard.prototype.displayBasicCard = function() {
 
 // ClozeCard constructor..
 function ClozeCard (text, cloze) {
-	if (!this instanceof ClozeCard) {
+	if (!(this instanceof ClozeCard)) {
 		return new CloseCard (text, cloze);
 	}
 	this.text = text;
@@ -108,10 +108,21 @@ function clozeQuestion() {
 	}, {
 		name: "cloze",
 		type: "input",
-		message: "Enter the Cloze word(s): "
+		message: "Enter the Cloze word(s): ",
+		validate: function (value) {
+	       if (value.length) {
+	         return true;
+	       } else {
+	         console.log('You forgot to add the cloze after the text.  Try again');
+	       }
+     }
 	}]).then(function(cloze) {
-		
-		var clozeFlashcard = new ClozeCard(cloze.text, cloze.cloze);
+		// if (cloze === "" || cloze === undefined || close === null){
+  //      console.log('You forgot to add the cloze after the text.  Try again');
+  //      return;
+  //  }
+
+   		var clozeFlashcard = new ClozeCard(cloze.text, cloze.cloze);
 		console.log("Cloze Flashcard Added!");
 		console.log("=========================");
 		clozeFlashcard.displayPartialText();

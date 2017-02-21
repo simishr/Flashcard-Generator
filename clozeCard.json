@@ -3,3 +3,13 @@
 {"text":"There are 48 countries in Asia.","cloze":"48","partial":"There are .......... countries in Asia."}
 {"text":"Lake Superior is the largest lake in the world.","cloze":"Lake Superior","partial":".......... is the largest lake in the world."}
 {"text":"Lake Titicaca is the highest lake in the world","cloze":"Lake Titicaca","partial":".......... is the highest lake in the world"}
+{"text":"hold me like a grudge","cloze":"","partial":"..........hold me like a grudge"}
+{"text":"but im weak","cloze":"","partial":"..........but im weak"}
+{"text":"triscuits my favs","cloze":"","partial":"..........triscuits my favs"}
+{"text":"hello hi","cloze":"","partial":"..........hello hi"}
+{"text":"hello hi","cloze":"","partial":"..........hello hi"}
+{"text":"hello hi","cloze":"null","partial":"hello hi"}
+{"text":"hello there","cloze":"","partial":"..........hello there"}
+{"text":"lean on","cloze":"","partial":"..........lean on"}
+{"text":"George Washington was the first President of USA","cloze":"USA","partial":"George Washington was the first President of .........."}
+{"text":"Today is Tuesday","cloze":"Tuesday","partial":"Today is .........."}
